@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Doni Tenaya</title>
+</head>
+<table align="center" border="0">
+  <tr>
+    <th width="50" scope="col">&nbsp;</th>
+    <th scope="col"><font size="+2" color='red' face="arial black">Doni Tenaya</font><font size="+1" face="arial black"></font></th>
+    <th width="450" scope="col"></th>
+  </tr>
+</table>
+<br>
+ <body background="most2.png">
+ <div align="center">
+ <form name="myform" method="post">
+ <table>
+ <tr><td colspan="3"><b><center><font size="+10" color='red'>BUKU TAMU</font></center></b></td></tr>
+<tr><td></td><td></td><td></td></tr><br><br>
+ <tr><td><font size="4" color='red'>Nama</td>
+ <td> : </td>
+ <td><input type="text" name="Nama"></td> </tr>
+<tr><td><font size="4" color='red'>Alamat</td>
+ <td> : </td>
+ <td><input type="text" name="Alamat"></td></tr>
+<tr><td><font size="4" color='red'>No.Telp</td>
+ <td> : </td>
+ <td><input type="text" name="No.Telp"></td></tr>
+<tr><td><font size="4" color='red'>Pilihan Sebagai</td>
+<td>    :</td>
+<td> <SELECT NAME="state">
+ <OPTION VALUE=”tas”>Siswa
+ <OPTION VALUE=”vic”select>Guru
+ <OPTION VALUE=”wa” SELECTED>Umum
+<tr><td><font size="4" color='red'>Jurusan</td>
+<td>:</td>
+<td><select jurusan="state">
+<option value="tas"selected>RPL
+<option value="vic"select>TKJ
+<option value="vic">MultiMedia
+<option value="vic">Animasi
+<option value="vic">TJA
+<option value="vic">KAP
+ </SELECT>
+</td>
+ </tr>
+</tr>
+<tr>
+<td><font size="4" color='red'>Jenis Kelamin</td>
+<td> : </td>
+<td><input type="radio" name="jenis_kelamin" value="L"> <font size="4" color='red'>Laki Laki &nbsp;
+<input type="radio" name="jenis_kelamin" value="P"> <font size="4" color='red'>Perempuan</td>
+</tr>
+<tr>
+<td><font size="4" color='red'>Komentar</td>
+<td> : </td>
+<td><textarea input type="text" name="komentar" rows=5 cols=30></textarea></td>
+</tr>
+ <tr>
+<td><br><input type="submit" name="submit" value="Simpan" style="width:80px;"></td>
+<td><br></td>
+<td><br><input type="reset" name="reset" value="Ulangi" style="width:80px;"></td>
+<td><br><input type="reset" name="reset" value="Batal" style="width:80px;"></td>      
+</tr>
+ </table>
+ </form>
+ </div>
+ <script type="text/javascript">
+ var myform = document.forms['myform']
+myform.onsubmit = function() 
+ {
+     if (this.elements['Nama'].value == '')
+     { alert('Nama belum diisi !'); }
+     
+else if (this.elements['Alamat'].value == '')
+     { alert('Alamat belum diisi !'); } else if (this.elements['No.Telp'].value == '')
+     { alert('No.Telp belum diisi !'); }
+else if (this.elements['jenis_kelamin'][0].
+checked == false && this.elements['jenis_kelamin'][1].checked == false)
+     { alert('Jenis kelamin belum dipilih !'); } 
+else if (this.elements['komentar'].value == '')
+     { alert('Komentar belum diisi !'); }
+else 
+     { document.write('Sukses !'); }
+  return false;
+ }
+ </script><br>
+<hr>
+<td colspan="3"><font color='Red' size="21"> .:::TERIMAKASIH ATAS KUNJUNGAN NYA:::.</font></td>
+<div style="position: fixed; bottom: 0px; left: 10px;width:130px;height:160px;"><a href= target="_blank"><img border="0" src="http://s.myniceprofile.com/myspacepic/243/th/24365.gif" title="My widget" alt="animasi bergerak gif" /></a>
+<div style="position: fixed; bottom: 0px; right: 10px;width:130px;height:160px;"><a href= target="_blank"><img border="0" src="http://s.myniceprofile.com/myspacepic/243/th/24365.gif" title="My widget" alt="animasi bergerak gif" /></a> 
+</div><embed allowscriptaccess='never' flashvars='autostart=true' height='0' src=' http://www.youtube.com/v/WFrOAJMpryQ&autoplay=1 ' type='application/x-shockwave-flash' width='0'></embed></body>
+</html>
